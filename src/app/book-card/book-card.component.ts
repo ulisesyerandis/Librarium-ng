@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 
 @Component({
   selector: 'app-book-card',
@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
   templateUrl: './book-card.component.html',
   styleUrl: './book-card.component.css'
 })
-export class BookCardComponent {
-
+export class BookCardComponent 
+{
+  
+  
 }

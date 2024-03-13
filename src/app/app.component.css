@@ -1,0 +1,16 @@
+.conteiner
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* border: #ff5100 2px solid; */
+}
+
+.background-image-conteiner
+{
+    width: auto;
+    height: auto;
+}
+/* *{
+    border: #ff5100 2px solid;
+} */

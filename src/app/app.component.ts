@@ -4,6 +4,10 @@ import { RouterOutlet } from '@angular/router';
 import UserComponent from './Component/user/user.component';
 import StoreComponent from './Component/Store/store.component';
 import BookComponent from './Component/book/book.component';
+import { BackgroundImageComponent } from './pages/main-page/background-image/background-image.component';
+import { HeaderComponent } from './pages/main-page/header/header.component';
+import  {NavbarComponent}  from './pages/main-page/navbar/navbar.component';
+import { RecommendedBookSectionComponent } from './pages/main-page/recommended-book-section/recommended-book-section.component';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +16,8 @@ import BookComponent from './Component/book/book.component';
   [
     CommonModule, RouterOutlet,
     UserComponent, StoreComponent, BookComponent,
+    BackgroundImageComponent, HeaderComponent, NavbarComponent,
+    RecommendedBookSectionComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

@@ -1,0 +1,24 @@
+.navbar
+{
+    height: 50px;
+    /* border: red 1px solid; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-right: 50px;
+}
+
+label
+{
+    /* border: red 1px solid; */
+    height: 40px;
+    width: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
