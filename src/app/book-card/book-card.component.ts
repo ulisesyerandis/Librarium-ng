@@ -9,6 +9,7 @@ import { Component, Input, input } from '@angular/core';
 })
 export class BookCardComponent 
 {
+  @Input()id: number = 0;
   @Input()name: string = '';
   @Input()author: string = '';
   @Input()year: number = 0;
