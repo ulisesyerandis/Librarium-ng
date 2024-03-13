@@ -1,5 +1,27 @@
-<div class="conteiner">
-    <div class="title-conteiner">
+<div class="container">
+    <div class="title-container">
+        <h1>Recomendations</h1>
+    </div>
+    <div class="carousel-container">
+        <button (click)="moveCarousel(-1)">
+            <img src="../../../../assets/icon/circle-arrow-left.svg" alt="left">
+        </button>
+        <div class="card-container" *ngFor="let book of visibleBooks">
+            <app-book-card
+                [id]="book.id"
+                [name]="book.name"
+                [author]="book.author"
+                [year]="book.year"
+                [price]="price1"
+                [img]="book.img"
+            ></app-book-card>
+        </div>
+        <button (click)="moveCarousel(1)">
+            <img src="../../../../assets/icon/circle-arrow-right.svg" alt="right">
+        </button>
+    </div>
+
+    <!-- <div class="title-conteiner">
         <h1>Recomendations</h1>
     </div>
     <div class="carrusel-conteiner">
@@ -19,5 +41,5 @@
         <button (click)="moverCarrusel(1)">
             <img src="../../../../assets/icon/circle-arrow-right.svg" alt="right">
         </button>
-    </div>
+    </div> -->
 </div>

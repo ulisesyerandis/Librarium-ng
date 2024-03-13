@@ -8,6 +8,7 @@ import { BackgroundImageComponent } from './pages/main-page/background-image/bac
 import { HeaderComponent } from './pages/main-page/header/header.component';
 import  {NavbarComponent}  from './pages/main-page/navbar/navbar.component';
 import { RecommendedBookSectionComponent } from './pages/main-page/recommended-book-section/recommended-book-section.component';
+import { BookCardComponent } from './book-card/book-card.component';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,7 @@ import { RecommendedBookSectionComponent } from './pages/main-page/recommended-b
     CommonModule, RouterOutlet,
     UserComponent, StoreComponent, BookComponent,
     BackgroundImageComponent, HeaderComponent, NavbarComponent,
-    RecommendedBookSectionComponent,
+    RecommendedBookSectionComponent,BookCardComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
