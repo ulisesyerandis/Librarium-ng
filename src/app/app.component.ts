@@ -9,6 +9,7 @@ import { HeaderComponent } from './pages/main-page/header/header.component';
 import  {NavbarComponent}  from './pages/main-page/navbar/navbar.component';
 import { RecommendedBookSectionComponent } from './pages/main-page/recommended-book-section/recommended-book-section.component';
 import { BookCardComponent } from './book-card/book-card.component';
+import { BestSellingBookSectionComponent } from './pages/main-page/best-selling-book-section/best-selling-book-section.component';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +19,8 @@ import { BookCardComponent } from './book-card/book-card.component';
     CommonModule, RouterOutlet,
     UserComponent, StoreComponent, BookComponent,
     BackgroundImageComponent, HeaderComponent, NavbarComponent,
-    RecommendedBookSectionComponent,BookCardComponent
+    RecommendedBookSectionComponent,BookCardComponent,
+    BestSellingBookSectionComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

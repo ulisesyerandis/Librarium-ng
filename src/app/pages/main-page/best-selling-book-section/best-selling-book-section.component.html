@@ -1,1 +1,19 @@
-<p>best-selling-book-section works!</p>
+<div class="container">
+    <div class="title-container">
+        <h1>Best Seller Book</h1>
+    </div>
+    
+        @for (book of  bookList; track $index) 
+    {
+        <div class="book-card-container">
+            <app-book-card
+                [id]="book.id"
+                [name]="book.name"
+                [author]="book.author"
+                [year]="book.year"
+                [img]="book.img"
+                [price]="price1"
+            ></app-book-card>
+        </div>
+    }
+</div>

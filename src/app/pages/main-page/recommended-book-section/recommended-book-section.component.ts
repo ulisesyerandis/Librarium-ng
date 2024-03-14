@@ -29,9 +29,6 @@ export class RecommendedBookSectionComponent implements OnInit
     {id: 9, name:'Brave New World', author:' Aldous Huxley', year:1932, img: '/assets/img/pexels-viktoria-alipatova-4038866.jpg'},
     ] 
  price1: number = 99.0;
- price2: number = 49.0;
- price3: number = 69.0;
- price4: number = 345.0;
 
   ngOnInit(): void 
   {
