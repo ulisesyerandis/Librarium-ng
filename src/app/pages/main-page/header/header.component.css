@@ -2,7 +2,7 @@ header
 {
     position: absolute;
     width: 100%;
-    height: 12%;
+    height: 4%;
 
     display: flex;
     flex-direction: row;
@@ -25,7 +25,6 @@ header
     align-items: center;
     /* gap: 55px; */
     /* border: blue 1px solid; */
-
 }
 
 a
