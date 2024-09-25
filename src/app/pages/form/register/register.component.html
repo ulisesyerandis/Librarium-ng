@@ -1,0 +1,44 @@
+<div class="container">
+    <img src="\assets\img\paolo.jpg" alt="Can't find the image">
+    <div class="signUp-container">
+        <h1>SIGN UP</h1>
+        <form class="form-vertical" [formGroup]="formUser">
+            <div class="mb-2">
+                <img src="\assets\icon\user-check.svg" alt="">
+                <!-- <label class="form-label"> Name: </label> -->
+                <input type="text" class="form-control" placeholder=" Name..." formControlName="name">
+            </div>
+
+            <div class="alert alert-danger mt-2" [hidden]="formUser.get('name')?.valid || formUser.get('name')?.pristine">
+                Please, enter your name...
+            </div>
+
+            <div class="mb-2">
+                <img src="\assets\icon\mailbox.svg" alt="">
+                <!-- <label class="form-label"> Email: </label> -->
+                <input type="email" class="form-control" placeholder=" email@example.com" formControlName="email">
+            </div>
+
+            <div class="alert alert-danger " [hidden]="formUser.get('email')?.valid || formUser.get('email')?.pristine">
+                Please enter a valid email 
+            </div>
+
+            <div class="mb-2">
+                <img src="\assets\icon\lock-open.svg" alt="">
+                <!-- <label class="form-label">Password: </label> -->
+                <input type="password" placeholder=" Password" formControlName="password">
+            </div>
+
+            <div class="alert alert-danger" [hidden]="formUser.get('password')?.valid || formUser.get('password')?.pristine">
+                The password most have 8 characters and an upercase
+            </div>
+
+            <button class="btn" type="button"
+            [disabled]="formUser.invalid"
+            (click)="register()"
+            >
+                Sign In
+            </button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+.value
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    h3
+    {
+       
+    }
+
+    .pipe-value
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}

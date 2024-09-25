@@ -1,6 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { User } from 'app/Models/User';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -8,8 +9,26 @@ import { User } from 'app/Models/User';
 export class UsersService 
 {
   private http = inject(HttpClient);
+  // private newUser!: User;
+  // private user: BehaviorSubject<User> = new BehaviorSubject<User>(this.newUser);
+  // public alert$ = this.user.asObservable;
+  private newUser: User = {
+    id: 0,
+    name: '',
+    email: '',
+    password: ''
+  }; // Inicializa newUser con un objeto vacío o con valores predeterminados
+  private user: BehaviorSubject<User> = new BehaviorSubject<User>(this.newUser);
+  public alert$: Observable<User> = this.user.asObservable(); // Agrega () al final de asObservable
 
   constructor() { }
+
+  public registeredUser(user: User)
+  {
+    console.log('1- user emited')
+    this.user.next(user);
+    
+  }
 
   //  index()
   public getAllUsers()

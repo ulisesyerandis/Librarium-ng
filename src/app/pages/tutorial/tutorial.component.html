@@ -1,0 +1,20 @@
+
+<div class="contenet">
+    <input type="number" placeholder="write here" [(ngModel)]="value" id="text" min="0">
+    <button type="button" class="btn">click</button>
+</div>
+<div class="value-content">
+    <div class="value">
+        <h3>value =  </h3> 
+        <div class="pipe-value">
+            {{ value }}
+        </div>
+    </div>
+    <div class="value">
+        <h3>pipe value = </h3>
+
+    <div class="pipe-value">
+        {{ value | tutorial }}
+    </div>
+    </div>
+</div>

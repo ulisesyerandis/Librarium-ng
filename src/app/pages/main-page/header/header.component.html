@@ -1,7 +1,12 @@
 <header>
     <div class="header-container">
-        <a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >Log in</a>
-        <a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >Register</a>
+        <a class="hover:bg-blue-400" [routerLink]="['/login']" routerLinkActive="router-link-active" 
+        
+        >Log in</a>
+        
+        <a [routerLink]="['/register']" routerLinkActive="router-link-active" 
+        (click)="goToRegister()"
+        >Register</a>
         <body>
             <button class="languaje-btn">.</button>
         </body>

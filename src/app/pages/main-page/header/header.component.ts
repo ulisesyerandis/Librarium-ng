@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -13,4 +13,13 @@ import { RouterLink } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent 
-{}
+{
+  @Output() register = new EventEmitter<boolean>();
+
+  goToRegister() 
+  {
+    console.log('valor = ' + this.register)
+    this.register.emit(true)
+  }
+
+}
