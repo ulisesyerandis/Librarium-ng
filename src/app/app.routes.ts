@@ -3,7 +3,7 @@ import { RegisterComponent } from './pages/form/register/register.component';
 import { LoginComponent } from './pages/form/login/login.component';
 import { TutorialComponent } from './pages/tutorial/tutorial.component';
 import { MainComponent } from './Main/main/main.component';
-import { LayoutComponent } from './pages/layout/layout.component';
+import LayoutComponent from './pages/layout/layout.component';
 
 export const routes: Routes = 
 [
@@ -50,4 +50,7 @@ export const routes: Routes =
         ]
     }
 
+    // dasgfsgSG
+    // KJGLKALFFASGDG
+    // HVLHVL
 ];
